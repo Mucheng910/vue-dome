@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <button v-on:click="toggle" >隐藏</button>
+    <div v-if="isshow">div</div>
+    <!--dom去掉节点-->
+    <div v-show="isshow">dic</div>
+    <!--style改变display:none-->
+</div>
+
+</body>
+<script src="vue.js"></script>
+<script>
+    new  Vue({
+        el:"#app",
+        data:{
+            isshow:true
+        },
+        methods:{
+            toggle:function () {
+                this.isshow=!this.isshow
+            }
+        }
+    })
+
+</script>
+</html>
