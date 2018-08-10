@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue-resource@1.5.1.js"></script>
+    <script src="../vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <button @click="getdata"> get请{{obj|}}</button>
+
+</div>
+
+</body>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+          obj:null
+        },
+        method:{
+            getdata:function () {
+                var url='http://vueapi.com/api/getprodlist'
+                //2.0
+                this.$http.get(url)
+                    .then(function (response) {
+                        // response.body
+                        //拿到数据
+                        this.obj=response.body;
+                    })
+            }
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    价格是:{{price}}
+
+    含税价格:{{ priceInTex}}
+
+    人民币:{{ priceChineRMB}}
+    <button @click="btnClick(10000)">加加1000</button>
+
+
+</div>
+
+</body>
+<script>
+    var app=new Vue({
+        el:'#app',
+        data:{
+            price:0,
+            priceInTex:0,
+            priceChineRMB:0
+
+        },
+        watch:{
+            price:function (newVal,oldVal) {
+                console.log(newVal,oldVal);
+                this.priceInTex=Math.round(this.price*1.08);
+                this.priceChineRMB=Math.round(this.priceInTex/16.75);
+            },
+        },
+        methods:{
+            btnClick:function (newPrice) {
+                this.price+=newPrice;
+            }
+        }
+
+    });
+    console.log(app);
+    app.price=29980;
+
+</script>
+</html>

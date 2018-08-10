@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app" >
+    {{time}}<br>
+    {{time|datefmt}}
+</div>
+<div id="app1">
+    {{time |datefmt}}
+</div>
+</body>
+<script>
+    Vue.filter('datefmt',function (input) {
+        var res='';
+        var yeach=input.getFullYear();
+        var moth=input.getMonth();
+        var day=input.getDate();
+        return res=yeach+'-'+moth+'-'+day;
+    });//设置全局过滤器
+    new  Vue({
+        el:'#app1',
+        data:{
+            time:new Date()
+        }
+    })
+    new  Vue({
+        el:'#app',
+        data:{
+            time:new Date()
+        }
+    })
+
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    价格是:{{price}}
+    <br>
+    含税价格:{{ priceInTex}}
+    <br>
+    人民币:{{ priceChineRMB}}
+
+</div>
+
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            price:29980
+        },
+        computed:{
+            priceInTex:function () {
+                return this.price*1.08;
+            },
+            priceChineRMB:function () {
+                return Math.round(this.priceInTex/16.75);
+            }
+        }
+    })
+
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p>{{message}}</p>
+    <p>{{message |toupper}}</p>
+    <p>{{num}}({{num|topercentage}})</p>
+</div>
+
+</body>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            message:"hello world vue.js",
+            num:0.3
+        },
+        filters:{
+            toupper:function (value) {
+                return value.toUpperCase();
+            },
+            topercentage:function (value) {
+                return value*100+'%';
+            }
+
+        }
+
+    })
+
+</script>
+</html>

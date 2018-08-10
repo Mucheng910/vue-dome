@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+<div id="myApp">
+    <ul>
+        <game-item v-for="item in games" v-bind:game="item">  </game-item>
+    </ul>
+</div>
+
+</body>
+<script>
+    Vue.component('game-item',{
+        props:['game'],
+        template:'<li>{{game.title}}</li>'
+    });
+    new Vue({
+        el:'#myApp',
+        data:{
+            games:[{title:'damajiang'},
+                {title:'doudizhu'},
+                {title:'doudou'}
+                ]
+        }
+    })
+</script>
+</html>

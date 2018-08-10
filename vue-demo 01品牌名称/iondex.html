@@ -26,9 +26,11 @@
 </head>
 <body>
 <div id="app">
-    <input type="text" v-model="id">
-    <input type="text" v-model="pname">
+    <input type="text" v-model="id" >
+    <input type="text" v-model="pname" @keydown.f2="addData">
+
     <button @click="addData">提交</button>
+    <input type="text" v-focus placeholder="请输入筛选">
     <table id="tb">
         <tr>
             <th>编号</th>
@@ -39,10 +41,10 @@
         <tr v-show="list.length==0">
             <td colspan="4">当前列表没有任何数据</td>
         </tr>
-        <tr v-for="item in list">
+        <tr v-for="item in list " >
             <td>{{item.id}}</td>
             <td>{{item.name}}</td>
-            <td>{{item.ctime}}</td>
+            <td>{{item.ctime | datefmt('yyyy-mm-dd') }}</td>
             <td>
                 <a href="#" v-on:click="del(item.id)">del</a>
             </td>
@@ -56,6 +58,39 @@
 </body>
 <script src="vue.js"></script>
 <script>
+    //vue1.0提供了一个可以自定义指令的vue.directive(自定义指令名称,回调函数)
+    Vue.directive('focus', {
+        inserted: function (el) {
+            el.focus()
+        }
+    });
+
+    // Vue directive('color',{
+    //     bind:function () {
+    //         this.el.style.color=this.vm[this.expression];
+    //     }
+    // });
+    //此指令已经移除
+    // Vue.elementDirective('my-red',{
+    //     bind:function () {
+    //         this.el.style.color="red";
+    //     }
+    // });
+    Vue.config.keyCodes.f2=113;
+    console.log(Vue.config.keyCodes)
+    Vue.filter('datefmt',function (input,formatstring) {
+        var res='';
+        var yeach=input.getFullYear();
+        var moth=input.getMonth();
+        var day=input.getDate();
+        if (formatstring=="yyyy-mm-dd") {
+            res=yeach+'-'+moth+'-'+day; //传参的写法
+        }
+        else {
+            res=yeach+'-'+moth+'-'+day+" 03:02:12";
+        }
+        return res;
+    });
     new Vue({
         el:"#app",
         data:{
@@ -63,7 +98,8 @@
                 {id:1,name:"奔驰",ctime:new Date}
             ],
             id:'',
-            pname:''
+            pname:'',
+            sname:'' //自动同步用户输入的筛选值
         },
         methods:{
             addData:function () {
