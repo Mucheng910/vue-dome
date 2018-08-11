@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ad9fe8a-47dc-497d-97cc-dcec5b4d089f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax请求演示/01get请求.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue01/class.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue01/class对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue01/setter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue01/watch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue01/事件处理器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue01/条件渲染.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue01/计算属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/全局过滤器/filters小马.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/全局过滤器/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/全局过滤器/vue-resource121.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/全局过滤器/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/组件/component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-demo 01品牌名称/iondex.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue-demo 01品牌名称/iondex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue01/v-modle-checkbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,29 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="class对象.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue01/class对象.html">
+      <file leaf-file-name="v-modle-checkbox.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue01/v-modle-checkbox.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="896">
-              <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="事件处理器.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue01/事件处理器.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vue01/class.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            <state relative-caret-position="420">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -90,6 +61,8 @@
         <option value="$PROJECT_DIR$/vue01/class对象.html" />
         <option value="$PROJECT_DIR$/vue01/条件渲染.html" />
         <option value="$PROJECT_DIR$/vue01/事件处理器.html" />
+        <option value="$PROJECT_DIR$/vue01/v-modle-checkbox.js" />
+        <option value="$PROJECT_DIR$/vue01/v-modle-checkbox.html" />
       </list>
     </option>
   </component>
@@ -100,10 +73,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/123/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/123/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
       <path value="$PROJECT_DIR$/todo-vue/package.json" />
     </packageJsonPaths>
@@ -127,6 +102,11 @@
             <path>
               <item name="vue-dome" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-dome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-dome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-dome" type="462c0819:PsiDirectoryNode" />
+              <item name="vue01" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -177,23 +157,25 @@
       <workItem from="1533717252637" duration="8466000" />
       <workItem from="1533778145364" duration="7836000" />
       <workItem from="1533786131397" duration="8206000" />
+      <workItem from="1533863710393" duration="5003000" />
+      <workItem from="1533987200251" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29712000" />
+    <option name="totallyTimeSpent" value="35313000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="-5" width="1849" height="1085" extended-state="6" />
+    <frame x="70" y="-14" width="1851" height="1095" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49835527" visible="true" weight="0.1671248" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49835527" visible="true" weight="0.1671248" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50082463" side_tool="true" weight="0.3289183" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49917537" visible="true" weight="0.32781458" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49917537" visible="true" weight="0.32781458" />
       <window_info id="Favorites" order="2" sideWeight="0.50164473" side_tool="true" weight="0.1671248" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -217,6 +199,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/vue01/v-modle-checkbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue01/class对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue01/事件处理器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue01/class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/组件/component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -318,11 +328,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2520">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-2520" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-demo 01品牌名称/iondex.html">
@@ -388,22 +394,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue01/class对象.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
+        <state relative-caret-position="182">
           <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue01/事件处理器.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="294">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue01/class.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
+        <state relative-caret-position="924">
           <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue01/v-modle-checkbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>

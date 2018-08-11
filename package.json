@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/Mucheng910/vue-dome#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
     "vue": "^2.5.17"
   },
   "devDependencies": {},
