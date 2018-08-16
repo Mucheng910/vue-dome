@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <h1>成绩</h1>
+    <test-res :score="30"></test-res>
+    <test-res :score="70"></test-res>
+    <test-res :score="90"></test-res>
+</div>
+
+</body>
+<script>
+    Vue.component('test-res',{
+        props:['score'],
+        template:'<div><strong>{{score}}{{res}}</strong></div>' ,
+        computed:{
+            res:function () {
+                var res="";
+                if(this.score<60)
+                    res="不及格";
+                else if (this.score<80)
+                    res="及格";
+                else if (this.score<100)
+                    res="优秀生";
+                return res;
+            }
+        }
+    });
+    var app=new  Vue({
+        el:"#app"
+    })
+</script>
+</html>
