@@ -1,15 +1,21 @@
 (function (window) {
 	'use strict';
 	var todos=[];
-	var len=[];
+
+	console.log(todos);
 	//noinspection JSAnnotator
 
 	var app=new Vue({
 		el:"#app",
 		data:{
-			todos:todos,
-			text:"",
-			len:len
+			todos: todos,
+			text: '',
+			isCompleted: false
+		},
+		filters:{
+			all:function () {
+			}
+
 		},
 		methods:{
 			f:function () {
@@ -21,7 +27,7 @@
 				}
 				this.todos.push({
 					text:this.text,
-					completed:false
+					Completed:false
 				});
 				this.text=""
 			},
@@ -34,16 +40,11 @@
 				});
 				this.todos.splice(todoIndex,1)
 			},
-			abc:function () {
-				for(todo in todos){
-					if(todo.complete===false){
-						this.len.push( "1");
-					}
-				}
-
-
+			edit:function () {
+				this.$nextTick(function () {
+					this.input.focus()
+				})
 			}
-
 		}
 
 	});

@@ -30,20 +30,20 @@
 						<!--</div>-->
 						<!--<input class="edit" value="Create a TodoMVC template">-->
 					<!--</li>-->
-					<li v-for="todo in todos">
-						<div class="view">
-							<input class="toggle" type="checkbox"   v-model="todo.completed" >
-							<label>{{ todo.text  }}</label>
+					<li v-for="todo in todos" :class="{completed:todo.Completed}">
+						<div class="view"  >
+							<input class="toggle" type="checkbox"   v-model="todo.Completed" >
+							<label @dblclick="edit(todo)">{{ todo.text  }}</label>
 							<button class="destroy" @click="del(todo.text)"></button>
 						</div>
-						<input class="edit" value="Rule the web">
+						<input class="edit" value="Rule the web" >
 					</li>
 				</ul>
 			</section>
 			<!-- This footer should hidden by default and shown when there are todos -->
 			<footer class="footer" v-if="todos.length!==0">
 				<!-- This should be `0 items left` by default -->
-				<span class="todo-count"><strong> {{ len.length }}</strong> item left</span>
+				<span class="todo-count"><strong>{{ }}</strong> item left</span>
 				<!-- Remove this if you don't implement routing -->
 				<ul class="filters">
 					<li>

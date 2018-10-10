@@ -5,11 +5,10 @@
     <title>Title</title>
     <script src="../vue-resource@1.5.1.js"></script>
     <script src="../vue.js"></script>
-
 </head>
 <body>
 <div id="app">
-    <button @click="getdata"> get请{{obj|}}</button>
+    <button @click="getDate"> get请</button>
 
 </div>
 
@@ -21,8 +20,8 @@
           obj:null
         },
         method:{
-            getdata:function () {
-                var url='http://vueapi.com/api/getprodlist'
+            getDate:function () {
+                var url='http://api.komavideo.com/news/list';
                 //2.0
                 this.$http.get(url)
                     .then(function (response) {
